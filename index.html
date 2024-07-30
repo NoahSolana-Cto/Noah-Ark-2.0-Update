@@ -291,7 +291,7 @@ def start_game(event=None):
         document['startScreen'].style.display = 'none'
         document['gameOverScreen'].style.display = 'none'
         if background_music is None:
-            background_music = html.AUDIO(src='assets/Wholl_Stop_The_Rain.mp3', loop=True)
+            background_music = html.AUDIO(src='none', loop=True)
             background_music.bind('loadeddata', lambda e: background_music.play())
         print("Background music started")
         reset_game()
